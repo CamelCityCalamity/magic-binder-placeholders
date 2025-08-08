@@ -10,15 +10,15 @@
     <line x1="84" y1="4" x2="84" y2="176"/>
   </g>
   <!-- Stylized Magic cards and placeholders, randomly mixed -->
-  <!-- Card 1: Red MTG card -->
+  <!-- Card 1: Blue MTG card -->
   <g>
-    <rect x="8" y="8" width="32" height="52" rx="3" fill="#c33" stroke="#222" stroke-width="2"/>
+    <rect x="8" y="8" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
     <rect x="12" y="12" width="24" height="8" rx="1.5" fill="#fff"/>
-    <g stroke="#a55" stroke-width="1.2">
+    <g stroke="#aaa" stroke-width="1.2">
       <line x1="14" y1="16" x2="34" y2="16"/>
       <line x1="16" y1="18" x2="32" y2="18"/>
     </g>
-    <rect x="14" y="22" width="20" height="14" rx="2" fill="#e77"/>
+    <rect x="14" y="22" width="20" height="14" rx="2" fill="#eee"/>
     <rect x="14" y="38" width="20" height="10" rx="1.5" fill="#fff"/>
     <g stroke="#bbb" stroke-width="1">
       <line x1="15" y1="41" x2="33" y2="41"/>
@@ -27,15 +27,15 @@
     </g>
   <rect x="28" y="54" width="10" height="6" rx="1" fill="none"/>
   </g>
-  <!-- Card 2: Red MTG card -->
+  <!-- Card 2: Blue MTG card -->
   <g>
-    <rect x="48" y="8" width="32" height="52" rx="3" fill="#c33" stroke="#222" stroke-width="2"/>
+    <rect x="48" y="8" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
     <rect x="52" y="12" width="24" height="8" rx="1.5" fill="#fff"/>
-    <g stroke="#a55" stroke-width="1.2">
+    <g stroke="#aaa" stroke-width="1.2">
       <line x1="54" y1="16" x2="74" y2="16"/>
       <line x1="56" y1="18" x2="72" y2="18"/>
     </g>
-    <rect x="54" y="22" width="20" height="14" rx="2" fill="#e77"/>
+    <rect x="54" y="22" width="20" height="14" rx="2" fill="#eee"/>
     <rect x="54" y="38" width="20" height="10" rx="1.5" fill="#fff"/>
     <g stroke="#bbb" stroke-width="1">
       <line x1="55" y1="41" x2="73" y2="41"/>
@@ -53,9 +53,9 @@
     <text x="104" y="44" font-size="5" font-family="monospace" fill="#222" text-anchor="middle">R</text>
     <text x="104" y="50" font-size="4" font-family="monospace" fill="#222" text-anchor="middle">420</text>
   </g>
-  <!-- Card 4: White MTG card (aligned with row) -->
+  <!-- Card 4: Blue MTG card (aligned with row) -->
   <g>
-    <rect x="88" y="66" width="32" height="52" rx="3" fill="#fff" stroke="#ccc" stroke-width="2"/>
+    <rect x="88" y="66" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
     <rect x="92" y="70" width="24" height="8" rx="1.5" fill="#fff"/>
     <g stroke="#aaa" stroke-width="1.2">
       <line x1="94" y1="74" x2="114" y2="74"/>
@@ -79,9 +79,9 @@
     <text x="64" y="102" font-size="5" font-family="monospace" fill="#222" text-anchor="middle">MR</text>
     <text x="64" y="108" font-size="4" font-family="monospace" fill="#222" text-anchor="middle">422</text>
   </g>
-  <!-- Card 6: White MTG card -->
+  <!-- Card 6: Blue MTG card -->
   <g>
-    <rect x="8" y="66" width="32" height="52" rx="3" fill="#fff" stroke="#ccc" stroke-width="2"/>
+    <rect x="8" y="66" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
     <rect x="12" y="70" width="24" height="8" rx="1.5" fill="#fff"/>
     <g stroke="#aaa" stroke-width="1.2">
       <line x1="14" y1="74" x2="34" y2="74"/>
@@ -104,13 +104,13 @@
     <text x="104" y="160" font-size="5" font-family="monospace" fill="#222" text-anchor="middle">R</text>
     <text x="104" y="166" font-size="4" font-family="monospace" fill="#222" text-anchor="middle">426</text>
   </g>
-  <!-- Card 8: White MTG card -->
+  <!-- Card 8: Blue MTG card -->
   <g>
-  <rect x="48" y="124" width="32" height="50" rx="3" fill="#fff" stroke="#ccc" stroke-width="2"/>
+  <rect x="48" y="124" width="32" height="50" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
   <rect x="52" y="128" width="24" height="8" rx="1.5" fill="#fff"/>
     <g stroke="#aaa" stroke-width="1.2">
-      <line x1="54" y1="138" x2="74" y2="138"/>
-      <line x1="56" y1="140" x2="72" y2="140"/>
+      <line x1="54" y1="132" x2="74" y2="132"/>
+      <line x1="56" y1="134" x2="72" y2="134"/>
     </g>
   <rect x="54" y="144" width="20" height="14" rx="2" fill="#eee"/>
   <rect x="54" y="160" width="20" height="10" rx="1.5" fill="#fff"/>
