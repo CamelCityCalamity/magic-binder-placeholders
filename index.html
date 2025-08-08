@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MTG Binder Placeholders - Web UI Edition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS for grid and UI -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon-48x48.png">
+</head>
+<body>
+<div id="app-container">
+    <header>
+        <img class="header-logo" src="images/binder-logo.svg" alt="Binder Logo" />
+        <div class="header-content">
+            <h1 class="header-title">MTG Binder Placeholders</h1>
+            <p class="header-desc">
+                Generate printable Magic: The Gathering card placeholders for your binder.<br>
+                Select a set, adjust options, and print a perfectly-aligned grid.
+            </p>
+        </div>
+    </header>
+    <main>
+        <!-- Landing View -->
+        <section id="landing-view" class="hidden">
+            <form id="set-search-form" autocomplete="off" spellcheck="false">
+                <label for="set-search-input"><b>Find a set:</b></label>
+                <input id="set-search-input" type="text" placeholder="Type set code or name..." aria-autocomplete="list" aria-controls="set-list" autocomplete="off" />
+                <button type="button" id="set-search-go" aria-label="Load selected set">Go</button>
+                <button type="button" id="refresh-set-list" title="Refresh set list from Scryfall" aria-label="Refresh set list">↻</button>
+            </form>
+            <div id="set-list" tabindex="0" aria-label="All sets"></div>
+            <div id="set-list-timestamp" style="font-size:0.9em;color:#666;margin-top:0.5em;"></div>
+        </section>
+
+        <!-- Error message area -->
+        <div id="error-message" role="alert"></div>
+
+        <!-- Grid View (hidden until set is loaded) -->
+        <section id="grid-view" class="hidden" style="width:100%;display:flex;flex-direction:row;align-items:flex-start;justify-content:center;">
+            <!-- Control Panel -->
+            <aside id="control-panel">
+                <div>
+                    <button type="button" id="home-btn" title="Return to set selection" style="margin-bottom: 1em;">Select Set...</button>
+                    <div style="display: grid; grid-template-columns: auto 1fr auto; grid-template-rows: auto auto; gap: 0.5em 1em; align-items: center; margin-bottom:1em;">
+                        <label style="margin:0; grid-row: 1; grid-column: 1;"><b>Set Code:</b></label>
+                        <span id="set-code" style="grid-row: 1; grid-column: 2;">---</span>
+                        <label style="margin:0; grid-row: 2; grid-column: 1;"><b>Set Name:</b></label>
+                        <span id="set-name" style="grid-row: 2; grid-column: 2;">---</span>
+                        <button type="button" id="refresh-card-list" title="Refresh this set from Scryfall" aria-label="Refresh set" style="grid-row: 1 / span 2; grid-column: 3; align-self: center;">↻</button>
+                    </div>
+                    <label style="margin-bottom: 1em; display: flex; align-items: center;"><b>Printer Margins (inches):</b>
+                        <span class="info-icon" id="printer-margins-info-btn" aria-label="Show printer margins info" tabindex="0">&#9432;</span>
+                    </label>
+                    <div id="printer-margins-info-box" class="info-box" style="display:none;">
+                        <b>Printer Margins:</b> These values represent your printer's physical margins (the non-printable area at the edge of each sheet). They are used to size the cards to fit on the paper. Consult your printer's online documentation or print a test page to determine the minimum margins your printer requires. Setting margins too large or small may result in irregular card spacing when the pages get forced to fit the page.
+                    </div>
+                    <div class="margin-inputs">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5em 1em; align-items: center;">
+                            <label for="margin-top" style="margin:0;">Top:</label>
+                            <input type="number" id="margin-top" min="0" max="2" step="0.01" value="0.16" style="width:4em;">
+                            <label for="margin-right" style="margin:0;">Right:</label>
+                            <input type="number" id="margin-right" min="0" max="2" step="0.01" value="0.16" style="width:4em;">
+                            <label for="margin-bottom" style="margin:0;">Bottom:</label>
+                            <input type="number" id="margin-bottom" min="0" max="2" step="0.01" value="0.16" style="width:4em;">
+                            <label for="margin-left" style="margin:0;">Left:</label>
+                            <input type="number" id="margin-left" min="0" max="2" step="0.01" value="0.16" style="width:4em;">
+                        </div>
+                        <button
+                            type="button"
+                            id="equal-margins-btn"
+                            title="Set all printer margins (Left, Right, Bottom) equal to the Top margin.">
+                            =
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label style="margin-bottom: 1em; display: flex; align-items: center;"><b>Card Counts:</b>
+                        <span class="info-icon" id="card-counts-info-btn" aria-label="Show card counts info" tabindex="0">&#9432;</span>
+                    </label>
+                    <div id="card-counts-info-box" class="info-box" style="display:none;">
+                        <b>Card Counts:</b> Adjust how many placeholders are generated for each rarity.
+                    </div>
+                    <div style="display: grid; grid-template-columns: auto 1fr; gap: 0.5em 1em; align-items: center; margin-bottom: 1em;">
+                        <label for="mythic-count" style="margin:0;">Mythic:</label>
+                        <input type="number" id="mythic-count" min="0" max="10" step="1" value="1" style="width:3em;">
+                        <label for="rare-count" style="margin:0;">Rare:</label>
+                        <input type="number" id="rare-count" min="0" max="10" step="1" value="1" style="width:3em;">
+                        <label for="uncommon-count" style="margin:0;">Uncommon:</label>
+                        <input type="number" id="uncommon-count" min="0" max="10" step="1" value="1" style="width:3em;">
+                        <label for="common-count" style="margin:0;">Common:</label>
+                        <input type="number" id="common-count" min="0" max="10" step="1" value="1" style="width:3em;">
+                    </div>
+                </div>
+                <div>
+                    <label style="margin-bottom: 1em; display: flex; align-items: center;"><b>Grid Size:</b>
+                        <span class="info-icon" id="grid-size-info-btn" aria-label="Show grid size info" tabindex="0">&#9432;</span>
+                    </label>
+                    <div id="grid-size-info-box" class="info-box" style="display:none;">
+                        <b>Grid Size:</b> Set the number of columns and rows per printed page. This controls the size of each card and maximizes paper usage. If you print 3 x 3, the cards won't fit in a standard 9-pocket page. The default of 4 x 4 works well. This tool is not designed to print full-sized placeholders. You should increase the row count if you are using legal size paper.
+                    </div>
+                    <div style="display: grid; grid-template-columns: auto 1fr; gap: 0.5em 1em; align-items: center; margin-bottom: 1em;">
+                        <label for="columns" style="margin:0;">Columns per page:</label>
+                        <input type="number" id="columns" min="1" max="8" step="1" value="4" style="width:3em;">
+                        <label for="rows" style="margin:0;">Rows per page:</label>
+                        <input type="number" id="rows" min="1" max="8" step="1" value="4" style="width:3em;">
+                    </div>
+                </div>
+                <div class="actions">
+                    <button type="button" id="enter-print-mode" class="primary" title="Enter print mode" aria-label="Enter print mode">Print Mode</button>
+                </div>
+                <!-- Place this below the Hide UI button in your control panel -->
+                <div id="enter-print-mode-instructions" style="margin-top:0.5em; color:#444; font-size:0.95em;">
+                    After entering print mode, press your browser's <kbd>Back</kbd> button to return to the UI or press the <kbd>Esc</kbd> key.<br>
+                    You can print the grid using <kbd>Ctrl+P</kbd> or your browser's print menu.
+                </div>
+            </aside>
+            <!-- Card Grid -->
+            <div id="binder-grid-container" style="flex:1;min-width:0;">
+                <div id="binder-grid" class="binder-grid"></div>
+            </div>
+        </section>
+    </main>
+    <footer style="text-align:center;font-size:0.9em;color:#888;padding:1em 0;">
+        <span>MTG Binder Placeholders &copy; 2025. Powered by <a href="https://scryfall.com/docs/api" target="_blank" rel="noopener">Scryfall API</a>.</span>
+    </footer>
+</div>
+<script type="module" src="scripts/main.js"></script>
+</body>

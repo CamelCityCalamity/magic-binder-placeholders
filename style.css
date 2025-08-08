@@ -1,0 +1,374 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #222;
+    color: #fff;
+    padding: 0;
+    min-height: 120px;
+    width: 100%;
+    gap: 2.5rem;
+}
+
+.header-logo {
+    display: block;
+    height: 110px;
+    width: auto;
+    margin-right: 0.5em;    
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header-title {
+    margin: 1.2rem 0 0.5rem 0;
+    font-size: 2.1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.header-desc {
+    margin: 0 0 1.2rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.header-desc {
+    margin: 0 0 1.2rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Center the set search form and its controls in the landing view */
+#landing-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#set-search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 0.5em auto;
+}
+
+#set-search-form label {
+    margin-right: 0.5em;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+#set-search-input {
+    flex: 1 1 200px;
+    min-width: 120px;
+    max-width: 260px;
+}
+
+#set-search-go,
+#refresh-set-list {
+    flex: 0 0 auto;
+}
+
+/* Simple scrollable set list */
+#set-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+#set-list.collapsed {
+    display: none;
+}
+
+#set-list-toggle {
+    background: none;
+    border: none;
+    color: #0074d9;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+}
+
+.set-list-item {
+    padding: 0.25em 0.5em;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.set-list-item.selected,
+.set-list-item:hover {
+    background: #e0eaff;
+}
+
+/* Control panel styling */
+#control-panel {
+    min-width: 260px;
+    max-width: 340px;
+    background: #f4f4f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1.2em 1.5em 1.2em 1.5em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+#control-panel label {
+    display: block;
+    margin-top: 1em;
+    font-weight: 500;
+}
+
+#control-panel input[type="number"],
+#control-panel input[type="text"] {
+    width: 5em;
+    margin-left: 0.5em;
+}
+
+#control-panel input[type="number"] {
+    width: 3.5em;
+}
+
+#control-panel .margin-inputs {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+}
+
+#control-panel .margin-inputs label {
+    margin-top: 0.5em;
+    font-weight: 400;
+}
+
+#control-panel .actions {
+    margin-top: 1.5em;
+    display: flex;
+    gap: 1em;
+}
+
+#control-panel button {
+    padding: 0.5em 1.2em;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #888;
+    background: #e0eaff;
+    cursor: pointer;
+}
+
+#control-panel button.primary {
+    background: #0074d9;
+    color: #fff;
+    border: none;
+}
+
+#error-message {
+    color: #b00;
+    background: #ffeaea;
+    border: 1px solid #fbb;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    border-radius: 4px;
+    display: none;
+}
+
+/* Grid view styles */
+.binder-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--columns, 4), 1fr); /* Default to 4 columns */
+    gap: 0; /* or adjust as needed */
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+/* Loading cards message styling */
+.loading-cards {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: start;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: #444;
+    padding: 2em 0 1em 0;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.binder-card {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1em;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-name {
+    font-weight: bold;
+    font-size: 0.8em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    margin-top: 0.75in;
+    margin-bottom: 0.2in;
+    text-align: center;
+    width: 100%;
+}
+
+.card-rarity {
+    font-size: 1em;
+    margin-bottom: 0.2in;
+    letter-spacing: 2px;
+}
+
+.card-number {
+    font-size: 1em;
+    margin-bottom: 0.75in;
+    align-self: center;
+}
+
+/* Responsive: stack control panel on mobile */
+@media (max-width: 900px) {
+    #control-panel {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.row-break {
+    display: block;
+    width: 100%;
+    height: 0;
+}
+
+/* Print mode styles */
+@media print {
+
+    .page-break {
+        display: block;
+        page-break-after: always;
+        break-after: page;
+        height: 0;
+        width: 0;
+    }
+}
+
+body.print-mode header,
+body.print-mode #control-panel,
+body.print-mode #landing-view,
+body.print-mode #error-message,
+body.print-mode footer {
+    display: none !important;
+}
+body.print-mode #grid-view {
+    display: block !important;
+}
+
+/* Info icon and info box styles for control panel */
+.info-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    text-align: center;
+    border-radius: 50%;
+    border: 1.5px solid #b3d1f7;
+    color: #0074d9;
+    background: none;
+    font-size: 1.1em;
+    margin-left: 0.5em;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    font-weight: bold;
+    user-select: none;
+    vertical-align: middle;
+    padding: 0;
+}
+.info-icon:focus,
+.info-icon:hover {
+    background: #e0eaff;
+    border-color: #0074d9;
+    outline: none;
+}
+
+.info-box {
+    background: #f8fbff;
+    border: 1px solid #b3d1f7;
+    color: #222;
+    border-radius: 6px;
+    padding: 0.8em 1em;
+    margin: 0.5em 0 1em 0;
+    font-size: 0.97em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    max-width: 100%;
+    word-break: break-word;
+    z-index: 10;
+    position: relative;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .header-logo {
+        margin-right: 0;
+        margin-bottom: 0.7em;
+    }
+    .header-content {
+        align-items: center;
+    }
+    .header-logo img {
+        max-height: 60px;
+        height: 60px;
+    }
+}

@@ -1,0 +1,11 @@
+.vscode
+.github
+*.env
+*.env.*
+*.local
+secrets.*
+*.log
+*.bak
+*.tmp
+node_modules/
+dist/
