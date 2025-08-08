@@ -42,3 +42,7 @@ Then open http://localhost:8080/index.html
 ---
 
 Powered by the [Scryfall API](https://scryfall.com/docs/api). This project is not affiliated with or endorsed by Wizards of the Coast.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this code for any purpose.
