@@ -15,20 +15,12 @@ export class Settings {
             land: "L"
         };
         
-        this.includedSetTypes = [
-            "core",
-            "expansion",
-            "masters",
-            "draft_innovation",
-            "commander",
-            "alchemy",
-            "funny",
-            "starter",
-            "box"
-        ];
-        
-        this.excludedBlockCodes = [
-            "htr"
+        this.excludedSetTypes = [
+            "alchemy", // online only
+            "memorabilia", // non-card items
+            "minigame", // booster pack minigame inserts
+            "treasure_chest", // online only
+            "vanguard" // oversized cards
         ];
 
         // UI-persisted settings (defaults)
@@ -51,8 +43,8 @@ export class Settings {
             rows: 4
         };
 
-        this._storageKey = 'magic-binders-user-settings-v1';
-        this._loadFromStorage();
+    this._storageKey = 'magic-binders-user-settings-v1';
+    this._loadFromStorage();
     }
 
     _loadFromStorage() {

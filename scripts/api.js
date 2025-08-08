@@ -69,19 +69,13 @@ export class CardApi {
             const resp = await fetch(this.SETS_URL);
             if (!resp.ok) throw new Error("Failed to fetch set list.");
             const json = await resp.json();
-            // if there are no includedSetTypes, throw an error
-            if (!this._settings || !this._settings.includedSetTypes || this._settings.includedSetTypes.length === 0) {
-                throw new Error("No set types are included. Please check settings.");
-            }
-            const includedSetTypes = this._settings?.includedSetTypes;
-            const excludedBlockCodes = this._settings?.excludedBlockCodes ?? [];
+            const excludedSetTypes = this._settings?.excludedSetTypes ?? [];
             sets = json.data
                 .filter(set =>
                     set.card_count &&
                     set.code &&
                     set.name &&
-                    includedSetTypes.includes(set.set_type) &&
-                    (!set.block_code || !excludedBlockCodes.includes(set.block_code))
+                    !excludedSetTypes.includes(set.set_type)
                 )
                 .sort((a, b) => new Date(b.released_at || 0) - new Date(a.released_at || 0));
             this._saveSetListToCache(sets);
