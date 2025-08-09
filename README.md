@@ -15,9 +15,9 @@ It fetches card data directly from the Scryfall API, allowing you to select a se
 
 - **Set Search:** Find an MTG set using the Scryfall API. (Some sets are not included and require changing settings.js to include.)
 - **Customizable Print Grid:** Choose the number of rows and columns per page to change the size of the printed placeholders. Cut lines are included.
-- **Adjustable Margins:** Fine-tune printer margins for perfect alignment of the printed placeholders. This ensures the printed page can be sliced into equal sized placeholders.
+- **Adjustable Margins:** Fine-tune printer margins for perfect alignment of the printed placeholders. This ensures the printed page can be sliced into equal sized placeholders. (Note: I haven't done any real world testing with variable print margins. My printer has four equal print margins.)
 - **Card Counts:** Set how many placeholders to print for each rarity (mythic, rare, uncommon, common). Useful if you want extra slots for rares or something.
-- **Print Mode:** Hide the UI with one click. Use Back or Esc to restore the UI.
+- **Print Mode:** Hide the UI with one click for printing. Use Back or Esc to restore the UI.
 - **Local Storage:** User settings, set lists, and card data are cached in your browser for speed.
 - **Refresh Buttons:** Manually refresh the set list or card data from Scryfall if needed.
 
