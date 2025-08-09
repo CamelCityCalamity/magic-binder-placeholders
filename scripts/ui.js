@@ -555,7 +555,6 @@ export class BinderUI {
 
         // --- Render grid ---
         this.binderGrid.innerHTML = "";
-        this.binderGrid.style.setProperty('--columns', columns); // Set columns for CSS grid
 
         const cardsPerPage = rows * columns;
         for (let idx = 0; idx < expandedCards.length; ++idx) {
