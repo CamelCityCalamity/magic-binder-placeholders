@@ -1,133 +1,807 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="128" height="180" viewBox="0 0 128 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="3in"
+   height="4.2187495in"
+   viewBox="0 0 127.65957 179.52125"
+   fill="none"
+   version="1.1"
+   id="svg39"
+   sodipodi:docname="binder-logo.svg"
+   inkscape:version="1.4.2 (unknown)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs39" />
+  <sodipodi:namedview
+     id="namedview39"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.577241"
+     inkscape:cx="127.43773"
+     inkscape:cy="151.21342"
+     inkscape:window-width="1920"
+     inkscape:window-height="1012"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg39"
+     inkscape:document-units="in" />
   <!-- Binder sheet background -->
-  <rect x="4" y="4" width="120" height="172" rx="4" fill="#fff" stroke="#bbb" stroke-width="3"/>
+  <rect
+     x="3.916672"
+     y="1.9294435"
+     width="119.96793"
+     height="175.74367"
+     rx="3.9989312"
+     fill="#ffffff"
+     stroke="#bbbbbb"
+     stroke-width="3.03206"
+     id="rect1" />
   <!-- 3x3 grid lines -->
-  <g stroke="#bbb" stroke-width="2">
-    <line x1="4" y1="62" x2="124" y2="62"/>
-    <line x1="4" y1="120" x2="124" y2="120"/>
-    <line x1="44" y1="4" x2="44" y2="176"/>
-    <line x1="84" y1="4" x2="84" y2="176"/>
+  <g
+     stroke="#bbbbbb"
+     stroke-width="2"
+     id="g4"
+     transform="matrix(1,0,0,1.0138644,-0.09936143,-2.1420476)">
+    <line
+       x1="4"
+       y1="62"
+       x2="124"
+       y2="62"
+       id="line1" />
+    <line
+       x1="4"
+       y1="119.1256"
+       x2="124"
+       y2="119.1256"
+       id="line2" />
+    <line
+       x1="44"
+       y1="4"
+       x2="44"
+       y2="176"
+       id="line3" />
+    <line
+       x1="84"
+       y1="4"
+       x2="84"
+       y2="176"
+       id="line4" />
   </g>
   <!-- Stylized Magic cards and placeholders, randomly mixed -->
   <!-- Card 1: Blue MTG card -->
-  <g>
-    <rect x="8" y="8" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
-    <rect x="12" y="12" width="24" height="8" rx="1.5" fill="#fff"/>
-    <g stroke="#aaa" stroke-width="1.2">
-      <line x1="14" y1="16" x2="34" y2="16"/>
-      <line x1="16" y1="18" x2="32" y2="18"/>
+  <g
+     id="g10"
+     transform="translate(0.18167514,-1.2434804)">
+    <rect
+       x="8"
+       y="8"
+       width="32"
+       height="52"
+       rx="3"
+       fill="#3b97a8"
+       stroke="#222222"
+       stroke-width="2"
+       id="rect4" />
+    <g
+       stroke="#aaaaaa"
+       stroke-width="1.2"
+       id="g6"
+       transform="matrix(1.3474471,0,0,1,-8.5628891,-5.6039851)" />
+    <rect
+       x="10.394019"
+       y="12.727479"
+       width="27.14901"
+       height="21.845978"
+       rx="0.7858246"
+       fill="#eeeeee"
+       id="rect6"
+       ry="0"
+       style="stroke-width:1.00918" />
+    <rect
+       x="10.313078"
+       y="38"
+       width="27.261765"
+       height="18.630138"
+       rx="0.60986692"
+       fill="#ffffff"
+       id="rect7"
+       style="stroke-width:1.59356" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.71258,-5.5642402)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9" />
     </g>
-    <rect x="14" y="22" width="20" height="14" rx="2" fill="#eee"/>
-    <rect x="14" y="38" width="20" height="10" rx="1.5" fill="#fff"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="15" y1="41" x2="33" y2="41"/>
-      <line x1="15" y1="43" x2="33" y2="43"/>
-      <line x1="15" y1="45" x2="28" y2="45"/>
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-1"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.7642039,4.9915294)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-9" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-4" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-7" />
     </g>
-  <rect x="28" y="54" width="10" height="6" rx="1" fill="none"/>
+    <rect
+       x="28"
+       y="54"
+       width="10"
+       height="6"
+       rx="1"
+       fill="none"
+       id="rect9" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:2.25724;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.609131,10.819908 h 20.96219"
+       id="path41" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:1.99301;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.950153,36.308574 H 27.292036"
+       id="path41-9" />
+  </g>
+  <g
+     id="g10-6"
+     transform="translate(39.992437,115.15439)">
+    <rect
+       x="8"
+       y="8"
+       width="32"
+       height="52"
+       rx="3"
+       fill="#3b97a8"
+       stroke="#222222"
+       stroke-width="2"
+       id="rect4-8" />
+    <g
+       stroke="#aaaaaa"
+       stroke-width="1.2"
+       id="g6-8"
+       transform="matrix(1.3474471,0,0,1,-8.5628891,-5.6039851)" />
+    <rect
+       x="10.394019"
+       y="12.727479"
+       width="27.14901"
+       height="21.845978"
+       rx="0.7858246"
+       fill="#eeeeee"
+       id="rect6-4"
+       ry="0"
+       style="stroke-width:1.00918" />
+    <rect
+       x="10.313078"
+       y="38"
+       width="27.261765"
+       height="18.630138"
+       rx="0.60986692"
+       fill="#ffffff"
+       id="rect7-3"
+       style="stroke-width:1.59356" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-14"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.71258,-5.5642402)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-92" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-0" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-6" />
+    </g>
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-1-8"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.7642039,4.9915294)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-9-9" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-4-2" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-7-6" />
+    </g>
+    <rect
+       x="28"
+       y="54"
+       width="10"
+       height="6"
+       rx="1"
+       fill="none"
+       id="rect9-6" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:2.25724;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.609131,10.819908 h 20.96219"
+       id="path41-4" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:1.99301;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.950153,36.308574 H 27.292036"
+       id="path41-9-9" />
+  </g>
+  <g
+     id="g10-0"
+     transform="translate(79.584104,56.640639)">
+    <rect
+       x="8"
+       y="8"
+       width="32"
+       height="52"
+       rx="3"
+       fill="#3b97a8"
+       stroke="#222222"
+       stroke-width="2"
+       id="rect4-4" />
+    <g
+       stroke="#aaaaaa"
+       stroke-width="1.2"
+       id="g6-87"
+       transform="matrix(1.3474471,0,0,1,-8.5628891,-5.6039851)" />
+    <rect
+       x="10.394019"
+       y="12.727479"
+       width="27.14901"
+       height="21.845978"
+       rx="0.7858246"
+       fill="#eeeeee"
+       id="rect6-1"
+       ry="0"
+       style="stroke-width:1.00918" />
+    <rect
+       x="10.313078"
+       y="38"
+       width="27.261765"
+       height="18.630138"
+       rx="0.60986692"
+       fill="#ffffff"
+       id="rect7-7"
+       style="stroke-width:1.59356" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-2"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.71258,-5.5642402)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-7" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-2" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-2" />
+    </g>
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-1-6"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.7642039,4.9915294)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-9-1" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-4-0" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-7-61" />
+    </g>
+    <rect
+       x="28"
+       y="54"
+       width="10"
+       height="6"
+       rx="1"
+       fill="none"
+       id="rect9-5" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:2.25724;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.609131,10.819908 h 20.96219"
+       id="path41-94" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:1.99301;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.950153,36.308574 H 27.292036"
+       id="path41-9-90" />
+  </g>
+  <g
+     id="g10-1"
+     transform="translate(-0.0784367,56.583165)">
+    <rect
+       x="8"
+       y="8"
+       width="32"
+       height="52"
+       rx="3"
+       fill="#3b97a8"
+       stroke="#222222"
+       stroke-width="2"
+       id="rect4-7" />
+    <g
+       stroke="#aaaaaa"
+       stroke-width="1.2"
+       id="g6-7"
+       transform="matrix(1.3474471,0,0,1,-8.5628891,-5.6039851)" />
+    <rect
+       x="10.394019"
+       y="12.727479"
+       width="27.14901"
+       height="21.845978"
+       rx="0.7858246"
+       fill="#eeeeee"
+       id="rect6-11"
+       ry="0"
+       style="stroke-width:1.00918" />
+    <rect
+       x="10.313078"
+       y="38"
+       width="27.261765"
+       height="18.630138"
+       rx="0.60986692"
+       fill="#ffffff"
+       id="rect7-5"
+       style="stroke-width:1.59356" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-9"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.71258,-5.5642402)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-77" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-6" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-73" />
+    </g>
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-1-65"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.7642039,4.9915294)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-9-6" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-4-3" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-7-9" />
+    </g>
+    <rect
+       x="28"
+       y="54"
+       width="10"
+       height="6"
+       rx="1"
+       fill="none"
+       id="rect9-4" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:2.25724;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.609131,10.819908 h 20.96219"
+       id="path41-8" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:1.99301;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.950153,36.308574 H 27.292036"
+       id="path41-9-1" />
+  </g>
+  <g
+     id="g10-9"
+     transform="translate(40.008446,-1.2335316)">
+    <rect
+       x="8"
+       y="8"
+       width="32"
+       height="52"
+       rx="3"
+       fill="#3b97a8"
+       stroke="#222222"
+       stroke-width="2"
+       id="rect4-3" />
+    <g
+       stroke="#aaaaaa"
+       stroke-width="1.2"
+       id="g6-9"
+       transform="matrix(1.3474471,0,0,1,-8.5628891,-5.6039851)" />
+    <rect
+       x="10.394019"
+       y="12.727479"
+       width="27.14901"
+       height="21.845978"
+       rx="0.7858246"
+       fill="#eeeeee"
+       id="rect6-0"
+       ry="0"
+       style="stroke-width:1.00918" />
+    <rect
+       x="10.313078"
+       y="38"
+       width="27.261765"
+       height="18.630138"
+       rx="0.60986692"
+       fill="#ffffff"
+       id="rect7-8"
+       style="stroke-width:1.59356" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-8"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.71258,-5.5642402)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-5" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-09" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-63" />
+    </g>
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g9-1-85"
+       transform="matrix(1.4057258,0,0,1.0993614,-9.7642039,4.9915294)">
+      <line
+         x1="15"
+         y1="41"
+         x2="33"
+         y2="41"
+         id="line7-9-61" />
+      <line
+         x1="15"
+         y1="43"
+         x2="33"
+         y2="43"
+         id="line8-4-1" />
+      <line
+         x1="15"
+         y1="45"
+         x2="28"
+         y2="45"
+         id="line9-7-5" />
+    </g>
+    <rect
+       x="28"
+       y="54"
+       width="10"
+       height="6"
+       rx="1"
+       fill="none"
+       id="rect9-9" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:2.25724;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.609131,10.819908 h 20.96219"
+       id="path41-84" />
+    <path
+       style="fill:#000000;stroke:#aaaaaa;stroke-width:1.99301;stroke-dasharray:none;stroke-opacity:1"
+       d="M 10.950153,36.308574 H 27.292036"
+       id="path41-9-8" />
   </g>
   <!-- Card 2: Blue MTG card -->
-  <g>
-    <rect x="48" y="8" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
-    <rect x="52" y="12" width="24" height="8" rx="1.5" fill="#fff"/>
-    <g stroke="#aaa" stroke-width="1.2">
-      <line x1="54" y1="16" x2="74" y2="16"/>
-      <line x1="56" y1="18" x2="72" y2="18"/>
-    </g>
-    <rect x="54" y="22" width="20" height="14" rx="2" fill="#eee"/>
-    <rect x="54" y="38" width="20" height="10" rx="1.5" fill="#fff"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="55" y1="41" x2="73" y2="41"/>
-      <line x1="55" y1="43" x2="73" y2="43"/>
-      <line x1="55" y1="45" x2="68" y2="45"/>
-    </g>
-  </g>
   <!-- Card 3: Placeholder (top right cell, inside pocket, column centered, adjusted left) -->
-  <g>
-  <rect x="94" y="30" width="20" height="24" rx="2" fill="#fff" stroke="#888" stroke-width="1.2"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="96" y1="36" x2="112" y2="36"/>
-      <line x1="96" y1="38" x2="110" y2="38"/>
-    </g>
-    <text x="104" y="44" font-size="5" font-family="monospace" fill="#222" text-anchor="middle">R</text>
-    <text x="104" y="50" font-size="4" font-family="monospace" fill="#222" text-anchor="middle">420</text>
-  </g>
   <!-- Card 4: Blue MTG card (aligned with row) -->
-  <g>
-    <rect x="88" y="66" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
-    <rect x="92" y="70" width="24" height="8" rx="1.5" fill="#fff"/>
-    <g stroke="#aaa" stroke-width="1.2">
-      <line x1="94" y1="74" x2="114" y2="74"/>
-      <line x1="96" y1="76" x2="112" y2="76"/>
-    </g>
-    <rect x="94" y="80" width="20" height="14" rx="2" fill="#eee"/>
-    <rect x="94" y="96" width="20" height="10" rx="1.5" fill="#fff"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="95" y1="99" x2="113" y2="99"/>
-      <line x1="95" y1="101" x2="108" y2="101"/>
-    </g>
-  <rect x="110" y="112" width="10" height="6" rx="1" fill="none"/>
-  </g>
   <!-- Card 5: Placeholder (middle center cell, inside pocket, column centered) -->
-  <g>
-    <rect x="54" y="88" width="20" height="24" rx="2" fill="#fff" stroke="#888" stroke-width="1.2"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="56" y1="94" x2="72" y2="94"/>
-      <line x1="56" y1="96" x2="70" y2="96"/>
+  <g
+     id="g25-4"
+     transform="matrix(1.3193043,0,0,1.2611953,18.822034,-82.316088)">
+    <rect
+       x="54"
+       y="88"
+       width="20"
+       height="24"
+       rx="2"
+       fill="#ffffff"
+       stroke="#888888"
+       stroke-width="1.2"
+       id="rect23-5" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g24-0"
+       transform="translate(0,-3.1616614)">
+      <line
+         x1="56"
+         y1="94"
+         x2="72"
+         y2="94"
+         id="line23-3" />
+      <line
+         x1="57.124146"
+         y1="96"
+         x2="71.124146"
+         y2="96"
+         id="line24-6" />
     </g>
-    <text x="64" y="102" font-size="5" font-family="monospace" fill="#222" text-anchor="middle">MR</text>
-    <text x="64" y="108" font-size="4" font-family="monospace" fill="#222" text-anchor="middle">422</text>
+    <text
+       x="64"
+       y="102"
+       font-size="5px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text24-1">R</text>
+    <text
+       x="64"
+       y="108"
+       font-size="4px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text25-0"><tspan
+         sodipodi:role="line"
+         x="64"
+         y="108"
+         id="tspan46">420</tspan></text>
+  </g>
+  <g
+     id="g25-4-5"
+     transform="matrix(1.3193043,0,0,1.2611953,18.657597,34.152906)">
+    <rect
+       x="54"
+       y="88"
+       width="20"
+       height="24"
+       rx="2"
+       fill="#ffffff"
+       stroke="#888888"
+       stroke-width="1.2"
+       id="rect23-5-4" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g24-0-7"
+       transform="translate(0,-3.1616614)">
+      <line
+         x1="56"
+         y1="94"
+         x2="72"
+         y2="94"
+         id="line23-3-4" />
+      <line
+         x1="57.124146"
+         y1="96"
+         x2="71.124146"
+         y2="96"
+         id="line24-6-4" />
+    </g>
+    <text
+       x="64"
+       y="102"
+       font-size="5px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text24-1-3">R</text>
+    <text
+       x="64"
+       y="108"
+       font-size="4px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text25-0-0"><tspan
+         sodipodi:role="line"
+         x="64"
+         y="108"
+         id="tspan46-7">426</tspan></text>
+  </g>
+  <g
+     id="g25-4-3"
+     transform="matrix(1.3193043,0,0,1.2611953,-20.304082,-24.117553)">
+    <rect
+       x="54"
+       y="88"
+       width="20"
+       height="24"
+       rx="2"
+       fill="#ffffff"
+       stroke="#888888"
+       stroke-width="1.2"
+       id="rect23-5-2" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g24-0-0"
+       transform="translate(0,-3.1616614)">
+      <line
+         x1="56"
+         y1="94"
+         x2="72"
+         y2="94"
+         id="line23-3-6" />
+      <line
+         x1="57.124146"
+         y1="96"
+         x2="71.124146"
+         y2="96"
+         id="line24-6-1" />
+    </g>
+    <text
+       x="64"
+       y="102"
+       font-size="5px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text24-1-5">MR</text>
+    <text
+       x="64"
+       y="108"
+       font-size="4px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text25-0-5"><tspan
+         sodipodi:role="line"
+         x="64"
+         y="108"
+         id="tspan46-4">422</tspan></text>
+  </g>
+  <g
+     id="g25-4-3-6"
+     transform="matrix(1.3193043,0,0,1.2611953,-60.03906,34.147315)">
+    <rect
+       x="54"
+       y="88"
+       width="20"
+       height="24"
+       rx="2"
+       fill="#ffffff"
+       stroke="#888888"
+       stroke-width="1.2"
+       id="rect23-5-2-5" />
+    <g
+       stroke="#bbbbbb"
+       stroke-width="1"
+       id="g24-0-0-6"
+       transform="translate(0,-3.1616614)">
+      <line
+         x1="56"
+         y1="94"
+         x2="72"
+         y2="94"
+         id="line23-3-6-9" />
+      <line
+         x1="57.124146"
+         y1="96"
+         x2="71.124146"
+         y2="96"
+         id="line24-6-1-3" />
+    </g>
+    <text
+       x="64"
+       y="102"
+       font-size="5px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text24-1-5-7">U</text>
+    <text
+       x="64"
+       y="108"
+       font-size="4px"
+       font-family="monospace"
+       fill="#222222"
+       text-anchor="middle"
+       id="text25-0-5-4"><tspan
+         sodipodi:role="line"
+         x="64"
+         y="108"
+         id="tspan46-4-5">424</tspan></text>
   </g>
   <!-- Card 6: Blue MTG card -->
-  <g>
-    <rect x="8" y="66" width="32" height="52" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
-    <rect x="12" y="70" width="24" height="8" rx="1.5" fill="#fff"/>
-    <g stroke="#aaa" stroke-width="1.2">
-      <line x1="14" y1="74" x2="34" y2="74"/>
-      <line x1="16" y1="76" x2="32" y2="76"/>
-    </g>
-    <rect x="14" y="80" width="20" height="14" rx="2" fill="#eee"/>
-    <rect x="14" y="96" width="20" height="10" rx="1.5" fill="#fff"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="15" y1="99" x2="33" y2="99"/>
-      <line x1="15" y1="101" x2="28" y2="101"/>
-    </g>
-  </g>
   <!-- Card 7: Placeholder (bottom right cell, inside pocket, column centered, adjusted left) -->
-  <g>
-  <rect x="94" y="146" width="20" height="24" rx="2" fill="#fff" stroke="#888" stroke-width="1.2"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="96" y1="152" x2="112" y2="152"/>
-      <line x1="96" y1="154" x2="110" y2="154"/>
-    </g>
-    <text x="104" y="160" font-size="5" font-family="monospace" fill="#222" text-anchor="middle">R</text>
-    <text x="104" y="166" font-size="4" font-family="monospace" fill="#222" text-anchor="middle">426</text>
-  </g>
   <!-- Card 8: Blue MTG card -->
-  <g>
-  <rect x="48" y="124" width="32" height="50" rx="3" fill="#3b97a8" stroke="#222" stroke-width="2"/>
-  <rect x="52" y="128" width="24" height="8" rx="1.5" fill="#fff"/>
-    <g stroke="#aaa" stroke-width="1.2">
-      <line x1="54" y1="132" x2="74" y2="132"/>
-      <line x1="56" y1="134" x2="72" y2="134"/>
-    </g>
-  <rect x="54" y="144" width="20" height="14" rx="2" fill="#eee"/>
-  <rect x="54" y="160" width="20" height="10" rx="1.5" fill="#fff"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="55" y1="163" x2="73" y2="163"/>
-      <line x1="55" y1="165" x2="68" y2="165"/>
-    </g>
-  <rect x="68" y="176" width="10" height="6" rx="1" fill="none"/>
-  </g>
   <!-- Card 9: Placeholder (bottom left cell, inside pocket, column centered) -->
-  <g>
-    <rect x="14" y="146" width="20" height="24" rx="2" fill="#fff" stroke="#888" stroke-width="1.2"/>
-    <g stroke="#bbb" stroke-width="1">
-      <line x1="16" y1="152" x2="32" y2="152"/>
-      <line x1="16" y1="154" x2="30" y2="154"/>
-    </g>
-    <text x="24" y="160" font-size="5" font-family="monospace" fill="#222" text-anchor="middle">MR</text>
-    <text x="24" y="166" font-size="4" font-family="monospace" fill="#222" text-anchor="middle">424</text>
-  </g>
 </svg>
