@@ -131,26 +131,35 @@ export class BinderUI {
         // Equal margins button
         if (this.equalMarginsBtn) {
             this.equalMarginsBtn.addEventListener("click", () => {
-                const topVal = this.marginInputs.top.value;
-                this.marginInputs.right.value = topVal;
-                this.marginInputs.bottom.value = topVal;
-                this.marginInputs.left.value = topVal;
-                this._renderCards()
+                let n = parseFloat(this.marginInputs.top.value);
+                let marginVal = isNaN(n) ? 0.16 : n;
+                // Set all UI fields
+                this.marginInputs.top.value = marginVal;
+                this.marginInputs.right.value = marginVal;
+                this.marginInputs.bottom.value = marginVal;
+                this.marginInputs.left.value = marginVal;
+                // Set all settings fields
+                this._settings.margins.top = marginVal;
+                this._settings.margins.right = marginVal;
+                this._settings.margins.bottom = marginVal;
+                this._settings.margins.left = marginVal;
+                this._settings.saveSettings();
+                this._renderCards();
             });
         }
 
         // Add event listeners for all controls that affect the grid layout and save settings
         const controls = [
-            { input: this.marginInputs.top,      update: (v, settings) => settings.margins.top = parseFloat(v) || 0.16 },
-            { input: this.marginInputs.right,    update: (v, settings) => settings.margins.right = parseFloat(v) || 0.16 },
-            { input: this.marginInputs.bottom,   update: (v, settings) => settings.margins.bottom = parseFloat(v) || 0.16 },
-            { input: this.marginInputs.left,     update: (v, settings) => settings.margins.left = parseFloat(v) || 0.16 },
-            { input: this.rarityInputs.mythic,   update: (v, settings) => settings.rarityCounts.mythic = parseInt(v) || 1 },
-            { input: this.rarityInputs.rare,     update: (v, settings) => settings.rarityCounts.rare = parseInt(v) || 1 },
-            { input: this.rarityInputs.uncommon, update: (v, settings) => settings.rarityCounts.uncommon = parseInt(v) || 1 },
-            { input: this.rarityInputs.common,   update: (v, settings) => settings.rarityCounts.common = parseInt(v) || 1 },
-            { input: this.columnsInput,          update: (v, settings) => settings.grid.columns = Math.max(1, Math.min(8, parseInt(v) || 4)) },
-            { input: this.rowsInput,             update: (v, settings) => settings.grid.rows = Math.max(1, Math.min(8, parseInt(v) || 4)) },
+            { input: this.marginInputs.top,      update: (v, settings) => { const n = parseFloat(v); settings.margins.top = isNaN(n) ? 0.16 : n; } },
+            { input: this.marginInputs.right,    update: (v, settings) => { const n = parseFloat(v); settings.margins.right = isNaN(n) ? 0.16 : n; } },
+            { input: this.marginInputs.bottom,   update: (v, settings) => { const n = parseFloat(v); settings.margins.bottom = isNaN(n) ? 0.16 : n; } },
+            { input: this.marginInputs.left,     update: (v, settings) => { const n = parseFloat(v); settings.margins.left = isNaN(n) ? 0.16 : n; } },
+            { input: this.rarityInputs.mythic,   update: (v, settings) => { const n = parseInt(v); settings.rarityCounts.mythic = isNaN(n) ? 1 : n; } },
+            { input: this.rarityInputs.rare,     update: (v, settings) => { const n = parseInt(v); settings.rarityCounts.rare = isNaN(n) ? 1 : n; } },
+            { input: this.rarityInputs.uncommon, update: (v, settings) => { const n = parseInt(v); settings.rarityCounts.uncommon = isNaN(n) ? 1 : n; } },
+            { input: this.rarityInputs.common,   update: (v, settings) => { const n = parseInt(v); settings.rarityCounts.common = isNaN(n) ? 1 : n; } },
+            { input: this.columnsInput,          update: (v, settings) => { const n = parseInt(v); settings.grid.columns = Math.max(1, Math.min(8, isNaN(n) ? 4 : n)); } },
+            { input: this.rowsInput,             update: (v, settings) => { const n = parseInt(v); settings.grid.rows = Math.max(1, Math.min(8, isNaN(n) ? 4 : n)); } },
         ];
         controls.forEach(({input, update}) => {
             if (input) {
@@ -458,23 +467,11 @@ export class BinderUI {
     }
 
     _renderCards() {
-        // Get user options from this instance's DOM elements
-        const margins = {
-            top: parseFloat(this.marginInputs.top.value) || 0.16,
-            right: parseFloat(this.marginInputs.right.value) || 0.16,
-            bottom: parseFloat(this.marginInputs.bottom.value) || 0.16,
-            left: parseFloat(this.marginInputs.left.value) || 0.16,
-        };
-        const rarityCounts = {
-            mythic: parseInt(this.rarityInputs.mythic.value) || 1,
-            rare: parseInt(this.rarityInputs.rare.value) || 1,
-            uncommon: parseInt(this.rarityInputs.uncommon.value) || 1,
-            common: parseInt(this.rarityInputs.common.value) || 1,
-        };
-        const columns = Math.max(1, Math.min(8, parseInt(this.columnsInput.value) || 4));
-        const rows = Math.max(1, Math.min(8, parseInt(this.rowsInput.value) || 4));
+        const margins = this._settings.margins;
+        const rarityCounts = this._settings.rarityCounts;
+        const columns = this._settings.grid.columns;
+        const rows = this._settings.grid.columns.rows;
 
-        // --- Grid math per goals.md ---
         const paperWidth = 8.5, paperHeight = 11;
         const stupidHack = 0.001; // Prevents rounding issues in CSS
 
@@ -543,7 +540,8 @@ export class BinderUI {
         }
         for (const card of this._cards) {
             let rarity = (card.rarity || "unknown").toLowerCase();
-            let count = rarityCounts[rarity] || 1;
+            let count = rarityCounts[rarity];
+            if (typeof count !== "number" || isNaN(count)) count = 1;
             for (let i = 0; i < count; ++i) expandedCards.push(card);
         }
         // Sort by collector_number
