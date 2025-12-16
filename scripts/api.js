@@ -208,6 +208,12 @@ export class CardApi {
                 collector_number: c.collector_number
             }));
 
+            // Just clear the whole cache if force is true. If one set has issues, others might, too.
+            if (force)
+            {
+                this._clearAllCache();
+            }
+
             this._saveCardSetToCache(setCode, minimal);
             this._saveCardSetTimestamp(setCode);
             return minimal;
