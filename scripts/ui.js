@@ -470,7 +470,7 @@ export class BinderUI {
         const margins = this._settings.margins;
         const rarityCounts = this._settings.rarityCounts;
         const columns = this._settings.grid.columns;
-        const rows = this._settings.grid.columns.rows;
+        const rows = this._settings.grid.rows;
 
         const paperWidth = 8.5, paperHeight = 11;
         const stupidHack = 0.001; // Prevents rounding issues in CSS
